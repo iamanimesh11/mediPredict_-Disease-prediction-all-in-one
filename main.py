@@ -4,6 +4,30 @@ import diabetes
 import  kidney
 import  liver
 from PIL import Image
+
+st.set_page_config(page_title='MediPredict ',page_icon="🌟🧠")
+
+# Add JavaScript to hide the GitHub icon
+hide_github_icon_js = """
+<style>
+#MainMenu {
+    display: none;
+}
+button.css-ch5dnh {
+    display: none;
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const toolbar = document.querySelector('[data-testid="stToolbar"]');
+    if (toolbar) {
+        toolbar.style.display = 'none';
+    }
+});
+</script>
+"""
+st.markdown(hide_github_icon_js, unsafe_allow_html=True)
+
 def medical():
     st.sidebar.write("Discover insights into your well-being through advanced machine learning models that offer Predictions of heart dieesease,liver disease,kidney disease ,diabete disease. User friendly interface helps you to input the details and let the models in backend works upon it .Accuray are relative high of all prediction model .Don't just get prediction also visualise the details as  per required and know what factors are major impact to that particular disease .Try now :)")
 
