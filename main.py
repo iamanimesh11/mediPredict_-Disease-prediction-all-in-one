@@ -5,7 +5,7 @@ import  kidney
 import  liver
 from PIL import Image
 
-st.set_page_config(page_title='MediPredict ',page_icon="🌟🧠")
+st.set_page_config(page_title='MediPredict ',page_icon="🤖")
 
 # Add JavaScript to hide the GitHub icon
 hide_github_icon_js = """
