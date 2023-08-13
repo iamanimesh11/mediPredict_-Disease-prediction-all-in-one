@@ -67,7 +67,8 @@ def medical():
             if i + j < len(data):
                 with row[j]:
                     disease_name = list(data.keys())[i + j]
-                    st.button(disease_name)
+                    if st.button(disease_name):
+                        st.success("Check Sidebar :)")
 
                     image_filename = data[disease_name]
                     st.image(f"resized_{image_filename}", width=150)
