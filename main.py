@@ -38,7 +38,7 @@ def medical():
     resized_image = image.resize(new_size)
     # Display the resized image
     imcol.image(resized_image)
-    x.image(resized_image)
+    # x.image(resized_image)
     st.header("Multi-Diseases  Predictions AI")
     textcol.title("MediPredict")
     textcol.markdown(" &#160; &#160; &#160;Made by Animesh | ")
