@@ -51,6 +51,7 @@ def medical():
         "Liver Disease Prediction": "image/liver.png",
         "Kidney Disease Prediction":"image/kidney.png",
         "Diabetes Prediction": "image/Diabetes-Type-1.png",
+        "Brain Tumor Predictor":"image/2f78bf0d8bb4800763136be686630334.png",
 
         # "Mental Health Prediction": "mental.png"
     }
