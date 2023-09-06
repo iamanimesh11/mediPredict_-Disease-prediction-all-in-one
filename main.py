@@ -4,6 +4,7 @@ import diabetes
 import  kidney
 import  liver
 from PIL import Image
+import brain_tumor_detection
 
 st.set_page_config(page_title='MediPredict ',page_icon="🤖")
 
@@ -88,7 +89,7 @@ def main():
 
     navigation = st.sidebar.selectbox(
         "",
-        ("MediPredict" , "Heart Disease Prediction", "Diabetes Prediction","Kidney Disease Prediction","Liver Disease Prediction")
+        ("MediPredict" , "Heart Disease Prediction", "Diabetes Prediction","Kidney Disease Prediction","Liver Disease Prediction","Brain Tumor Predictor")
     )
 
     if navigation == "MediPredict":
@@ -124,6 +125,14 @@ def main():
             liver.display()
         elif sub_page == "project overview":
             liver.show_project_overview_page()
+    elif navigation =="Brain Tumor Predictor":
+        sub_page = st.sidebar.radio("", ["Brain Tumor Prediction", "project overview"])
+        if sub_page == "Brain Tumor Prediction":
+            brain_tumor_detection.display()
+        elif sub_page == "project overview":
+            brain_tumor_detection.show_project_overview_page()
+
+    
 
 
 if __name__ == '__main__':
